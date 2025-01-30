@@ -5,25 +5,20 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.VisualBasic;
-using Microsoft.VisualBasic.FileIO;
 using ServerLibrary.Data;
 using ServerLibrary.Helpers;
 using ServerLibrary.Repositories.Contracts;
-using System;
-using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
-using System.Threading.Tasks;
 using Constants = ServerLibrary.Helpers.Constants;
 
 namespace ServerLibrary.Repositories.Implementations
 {
     public class UserAccountRepository(IOptions<JwtSection> config, AppDbContext appDbContext) : IUserAccount
     {
-        public async Task<GeneralResponse> CreateAsync(Register user)
+        public async Task<GeneralResponse> CreateAsync(Register user) 
         {
             // validation 
             if (user is null) return new GeneralResponse(false, "Model is empty");
@@ -112,7 +107,7 @@ namespace ServerLibrary.Repositories.Implementations
 
         private async Task<ApplicationUser> FindUserByEmail(string email)
         {
-            return await appDbContext.ApplicationUsers.FirstOrDefaultAsync(_ => _.Email!.ToLower()!.Equals(email!.ToLower()));
+            return  await appDbContext.ApplicationUsers.FirstOrDefaultAsync(_ => _.Email!.ToLower()!.Equals(email!.ToLower()));
         }
 
         private async Task<T> AddToDatabase<T>(T model)

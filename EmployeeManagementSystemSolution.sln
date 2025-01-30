@@ -13,8 +13,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClientLibrary", "ClientLibr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServerLibrary", "ServerLibrary\ServerLibrary.csproj", "{16FA6297-DA65-4DBA-BB0E-D95E93A5DF12}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Example", "Example\Example.csproj", "{D8C0F363-E495-45EC-B4EE-36F2941FCB72}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D42BEAFD-2AE6-4624-8197-E313D7D18A24}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
@@ -46,10 +44,6 @@ Global
 		{16FA6297-DA65-4DBA-BB0E-D95E93A5DF12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16FA6297-DA65-4DBA-BB0E-D95E93A5DF12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16FA6297-DA65-4DBA-BB0E-D95E93A5DF12}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D8C0F363-E495-45EC-B4EE-36F2941FCB72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D8C0F363-E495-45EC-B4EE-36F2941FCB72}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D8C0F363-E495-45EC-B4EE-36F2941FCB72}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D8C0F363-E495-45EC-B4EE-36F2941FCB72}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
